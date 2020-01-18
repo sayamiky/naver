@@ -12,6 +12,8 @@ class Index extends CI_Controller {
 		// $this->load->model('matakuliah_model','',TRUE);
 	}
 
+	
+
 	function index()
 	{
 
