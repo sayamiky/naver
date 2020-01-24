@@ -30,7 +30,7 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <form action="<?php echo base_url('login/aksi_login'); ?>" method="post">
+            <?php echo form_open('auth/login');?>
               <h1>Login Form</h1>
               <div>
                 <input name="username" type="text" class="form-control" placeholder="Username" required="" />
@@ -40,7 +40,8 @@
               </div>
               <div>
                 <!-- <a class="btn btn-default submit" href="index.html">Log in</a> -->
-                <button class="btn btn-default submit" type="submit">Login</button>
+                <!-- <button class="btn btn-default submit" type="submit">Login</button> -->
+                <input type="submit" name="submit" onclick="myFunction()" value="LOGIN" >
               </div>
 
               <div class="clearfix"></div>

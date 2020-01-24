@@ -21,7 +21,7 @@ class matakuliah extends CI_Controller {
 		//TODO: check for valid column
 	 
 		// load data
-		$matakuliahs = $this->matakuliah_model->get_paged_list($this->limit, $offset, $order_column, $order_type)->result();
+		$matakuliah = $this->matakuliah_model->get_paged_list($this->limit, $offset, $order_column, $order_type)->result();
 	 
 		// generate pagination
 		$this->load->library('pagination');
