@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+  <link rel="icon" href="images/favicon.ico" type="image/ico" />
+  
 
     <title>Naver</title>
 
@@ -71,7 +72,7 @@
                   </li>
                   <li><a href="<?php echo site_url('paket/index') ?>"><i class="fa fa-folder"></i> Package </a>
                   <li><a href="<?php echo site_url('reservasi/index') ?>"><i class="fa fa-calendar"></i> Booking </a></li>
-                  <li><a href="<?php echo site_url('transaksi/index') ?>"><i class="fa fa-money"></i> Transaction <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-money"></i> Transaction <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?php echo site_url('pembayaran/index') ?>">Payment</a></li>
                       <li><a href="<?php echo site_url('jenispembayaran/index') ?>">Payment Methode</a></li>

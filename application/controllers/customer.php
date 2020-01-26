@@ -30,7 +30,7 @@ class customer extends CI_Controller{
         }
         else{
             //$this->load->view('customer/form_input');
-            $this->template->load('template','customer/form_input');
+            $this->load->view('customerAdd');
         }
     }
     
@@ -45,7 +45,7 @@ class customer extends CI_Controller{
             $id=  $this->uri->segment(3);
             $data['record']=  $this->model_customer->get_one($id)->row_array();
             //$this->load->view('customer/form_edit',$data);
-            $this->template->load('template','customer/form_edit',$data);
+            $this->load->view('customerEdit',$data);
         }
     }
     

@@ -21,8 +21,8 @@ class Model_customer extends CI_Model{
      
     function post(){
         $data=array(
-           'nama'=>  $this->input->post('namacust'),
-           'notelp' => $this->input->post('tlp'),
+           'namacust'=>  $this->input->post('namacust'),
+           'tlp' => $this->input->post('tlp'),
            'email' => $this->input->post('email'),
            'alamat' => $this->input->post('alamat'),
            'kota' => $this->input->post('kota'),
@@ -37,8 +37,8 @@ class Model_customer extends CI_Model{
     function edit()
     {
         $data=array(
-            'nama'=>  $this->input->post('namacust'),
-            'notelp' => $this->input->post('tlp'),
+            'namacust'=>  $this->input->post('namacust'),
+            'tlp' => $this->input->post('tlp'),
             'email' => $this->input->post('email'),
             'alamat' => $this->input->post('alamat'),
             'kota' => $this->input->post('kota'),
@@ -46,7 +46,7 @@ class Model_customer extends CI_Model{
             'nopasspor' => $this->input->post('nopasspor')
 
                     );
-        $this->db->where('idcust',$this->input->post('id'));
+        $this->db->where('idcust',$this->input->post('idcust'));
         $this->db->update('customer',$data);
     }
     
