@@ -66,8 +66,8 @@
                 <td><?php echo $r->namapaket ?></td>
                 <!-- <td><?php echo $r->hargapaket ?></td> -->
                 <td><?php echo number_format ($r->hargapaket,2) ?></td>
-                <!-- <td><img src="<?php echo $r->fotopaket ?>"</td> -->
-                <td><img src="<?=base_url()?>upload/<?=$r->fotopaket;?>'>" alt=""></td>
+                <td><?php echo $r->fotopaket ?></td>
+                <!-- <td><img src="<?=base_url()?>upload/<?=$r->fotopaket;?>'>" alt=""></td> -->
 
                 <td class="center">
                     <?php echo anchor('paket/edit/'.$r->idpaket,'Edit'); ?> | 
